@@ -1,0 +1,2 @@
+2020/09/14 10:57:03 [error] 14068#1576: *1 CreateFile() "E:\wyq_project\customerCms\FrontEnd/webApp/favicon.ico" failed (2: The system cannot find the file specified), client: 127.0.0.1, server: localhost, request: "GET /favicon.ico HTTP/1.1", host: "localhost", referrer: "http://localhost/"
+2020/09/14 11:00:08 [notice] 9944#7380: signal process started
