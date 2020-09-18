@@ -11,6 +11,14 @@
 </style>
 </head>
 <body>
-Hello World
+    <script>
+        function login(){
+            fetch('http://localhost:8080/login',{
+                method:'Get'
+            }).then(response=>console(response,"ddddddd"))
+        }
+
+        login();
+    </script>
 </body>
 </html>
