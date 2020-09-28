@@ -18,15 +18,23 @@ class Server {
             
             res.header('Access-Control-Allow-Origin', 'http://localhost');
 
+            res.header('Access-Control-Allow-Headers', 'Content-Type');
+
+            res.header('Access-Control-Allow-Methods', '*');
+
             next();
         })
     }
     login(){
         const path = '../controller/login/login';
 
+        const modelPath = '../model/login/login';
+
         const {Login} = require(path);
 
-        new Login(this.server);
+        const {Login:Model} = require(modelPath);
+
+        new Login(this.server,new Model());
     }
 
 }
