@@ -13,9 +13,17 @@ class Login {
         this.server.post('/login',this.login)
     }
     login(req,res){
-        console.log(req.body.userName);
-        
-        res.send('{"msg":"登陆成功"}')
+        const data = this.model.login(req.body.userName);
+
+        if(data)
+        {   //
+            if(data.password == req.body.password)
+            {   //返回webtoken
+                res.send('{"msg":"登陆成功","webtoken":""}')
+            }
+            else{ res.send('{"msg":"密码输入错误"}'); }
+        }
+        else{ res.send('{"msg":"账号输入错误"}'); } 
     }
 }
 
