@@ -1,0 +1,14 @@
+[{
+  "_id": {
+    "$oid": "5f5f5dbd2a46c8028c335a5f"
+  },
+  "userName": "admin",
+  "password": "admin",
+  "power": {
+    "type": "经理"
+  }
+},{
+  "_id": {
+    "$oid": "5f6acabe2bc1233388cf0ccf"
+  }
+}]
