@@ -8,22 +8,9 @@ class Server {
 
         this.main();
     }
-    main(){
-        this.allowOringin();
+    main(){                                                                                           
         //登陆模块
         this.login();
-    }
-    allowOringin(){
-        this.server.all('*',(req,res,next)=>{
-            
-            res.header('Access-Control-Allow-Origin', 'http://localhost');
-
-            res.header('Access-Control-Allow-Headers', 'Content-Type');
-
-            res.header('Access-Control-Allow-Methods', '*');
-
-            next();
-        })
     }
     login(){
         const path = '../controller/login/login';
